@@ -1,0 +1,160 @@
+.user-intent-page {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.user-intent-page .logo {
+  align-self: flex-start;
+  justify-self: flex-start;
+
+  margin: 2rem;
+
+  color: #de558b;
+}
+
+.user-intent-page .user-intent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.2rem;
+
+  text-align: center;
+
+  width: 90%;
+
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.user-intent-container > .back-button {
+  border: none;
+  outline: none;
+
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+
+  font-weight: 700;
+}
+.user-intent-container .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.user-intent-container .heading h4 {
+  font-size: 1.5rem;
+  font-family: "Roboto", san-serif;
+
+  font-weight: 900;
+
+  margin-top: 1rem;
+
+  text-wrap: wrap;
+}
+
+.user-intent-container .heading p {
+  font-size: 0.8rem;
+
+  color: #88918f;
+}
+
+.user-intent-container .intent-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.intent-cards-container .card {
+  border: 1px solid rgba(211, 211, 211, 0.548);
+  border-radius: 15px;
+
+  margin-top: 5rem;
+
+  padding: 1rem;
+
+  height: 15rem;
+  max-width: 15rem;
+
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.intent-cards-container .selected-card {
+  z-index: 1;
+
+  border: 2px solid #de558b;
+}
+
+.intent-cards-container .card img {
+  z-index: 2;
+  width: 100%;
+
+  mix-blend-mode: color-burn;
+}
+
+.intent-cards-container .card h5 {
+  font-size: 1rem;
+}
+
+.intent-cards-container .card p {
+  font-size: 0.7rem;
+
+  height: 0;
+  opacity: 0;
+
+  transition: opacity 1s ease, height 1s ease;
+}
+
+.intent-cards-container .card .visibility {
+  height: 5rem;
+
+  opacity: 1;
+}
+
+.intent-cards-container .card .checkbox {
+  font-size: 11px;
+  font-family: "Roboto", san-serif;
+}
+
+.intent-cards-container .card .checkmark {
+  height: 20px;
+  width: 20px;
+
+  border-radius: 50%;
+}
+
+.intent-cards-container .card .checkbox input:checked ~ .checkmark {
+  background-color: #de558b;
+}
+
+.intent-cards-container .card .checkbox .checkmark:after {
+  top: 1px;
+  left: 5px;
+}
+
+.user-intent-container .intent-cards-container + span {
+  font-family: "Montserrat", san-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.user-intent-container .submit-button {
+  background-color: #de558b;
+}
+
+.user-intent-container .return-message {
+  margin-top: -0.8rem;
+}

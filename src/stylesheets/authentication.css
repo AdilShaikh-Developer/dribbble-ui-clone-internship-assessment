@@ -1,0 +1,190 @@
+.authentication-page {
+  height: 100dvh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.illustration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  background-color: #e2f0fe;
+  color: #88918f;
+}
+
+.illustration-container .logo,
+.art-credit {
+  margin-left: 4rem;
+}
+
+.illustration-container .tagline {
+  margin: 0 4rem;
+
+  font-family: "Montserrat", san-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.illustration-container .graphic {
+  margin-top: -1rem;
+  width: 100%;
+}
+
+.illustration-container .art-credit {
+  font-family: "Montserrat", san-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.illustration-container .art-credit a {
+  text-decoration: underline;
+}
+
+.form-container {
+  height: 100vh;
+  width: 80%;
+  max-width: 500px;
+
+  margin: auto;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  padding-top: 5rem;
+}
+
+.form-container > span {
+  position: absolute;
+
+  justify-self: flex-end;
+
+  top: 1rem;
+  right: 1rem;
+
+  font-family: "Montserrat", san-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.form-container > span a {
+  color: #7c6fbc;
+}
+
+.form-container > h4 {
+  font-family: "Roboto", san-serif;
+  font-size: 1.5rem;
+}
+
+.form-container > li {
+  font-family: "Open Sans", san-serif;
+  font-size: 0.8rem;
+
+  margin: -0.5rem 1rem;
+
+  color: #f85556;
+}
+
+.form-container form {
+  margin: 0.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-container form label {
+  margin: 5px 0;
+
+  font-family: "Roboto", san-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+}
+
+.form-container form label svg {
+  color: #f85556;
+}
+
+.form-container form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container form div div {
+  display: flex;
+  flex-direction: column;
+
+  width: 49%;
+}
+
+.form-container form > input,
+.form-container form div div input {
+  padding: 0.5rem;
+
+  width: 100%;
+
+  background: #f3f3f3;
+
+  border: none;
+  border-radius: 5px;
+
+  outline: none;
+}
+
+.form-container form > input {
+  margin-top: -1rem;
+}
+
+.form-container form input::placeholder {
+  font-family: "Open Sans", san-serif;
+  font-size: 0.7rem;
+  color: #88918f;
+}
+
+.terms-condition-container {
+  margin: 0.5rem 0;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 0.7rem;
+}
+
+.terms-condition-container span,
+.form-container form > span {
+  line-height: 1.2rem;
+  font-family: "Montserrat", san-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+
+  padding-top: 5px;
+
+  color: #88918f;
+}
+.terms-condition-container span a,
+.form-container form > span a {
+  color: #7c6fbc;
+  font-weight: 600;
+}
+
+.form-container form > span {
+  font-size: 0.7rem;
+
+  width: 70%;
+}
+
+.form-container .return-message {
+  margin-top: -1rem;
+  width: 10rem;
+}
